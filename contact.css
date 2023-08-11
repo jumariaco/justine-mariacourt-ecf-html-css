@@ -1,0 +1,79 @@
+header{
+    background-image: url(/massage.png);
+  background-size: 100%;
+}
+
+h1,h2{
+  text-align: center;
+}
+ a{
+  text-decoration: none;
+}
+
+form{
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 300px;
+  width: 60vw;
+  background-color: var(--couleur-fond1);
+  color : #f5f6f7;
+  text-align: left;
+  border-radius : 10px;
+}
+
+label{
+  display: block;
+  margin: 5px 0;
+}
+
+fieldset{
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid var(--couleur-fond1);
+}
+
+fieldset:last-of-type{
+border : none
+}
+
+input, textarea, select {
+  margin : 2% 5% 0 5%;
+  width : 90%;
+  align-items: center;
+  border-radius : 10px;
+ 
+}
+
+.inline {
+  width : unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle ;
+}
+
+input, textarea{
+  background-color: var(--couleur-fond2);
+  border : 1px solid black;
+  color : #ffffff;
+  min-height: 2em;
+}
+
+button{
+  display : block;
+  margin:1em auto;
+  min-width: 300px;
+}
+
+a{
+  color : #dfdfe2
+}
+/*vue mobile*/
+@media (max-width:767px) {
+  header{height : 160vw;
+  background-size : 200%;}
+  header p{font-weight: bold ;
+    font-size : 18px;
+    width : 80%;
+    margin: 0 auto;
+    margin-top : 70%;
+}
+}

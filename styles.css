@@ -1,0 +1,152 @@
+:root {
+    --couleur-fond1: rgb(196, 88, 36);
+    --couleur-fond2: rgb(215, 162, 133);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+button {
+    border-radius: 30px;
+    border: 1px solid black;
+    height: 50px;
+    width: 250px;
+    background-color: var(--couleur-fond2);
+    font-size: 22px;
+    color: white;
+}
+
+button:hover {
+    background-color: var(--couleur-fond1)
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+/*barre de navigation*/
+.navbar,
+header,
+footer {
+    background: linear-gradient(90deg, var(--couleur-fond1), var(--couleur-fond2), white);
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+.logo {
+    position: relative;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
+    max-height: 60px;
+}
+
+.navbar a:nth-child(2),
+.navbar a:nth-child(3) {
+    font-size: 40px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: black;
+    margin-left: 30%;
+    margin-top: 17px;
+}
+/*header*/
+header {
+    width: 100%;
+    padding-top: 80px;
+    height: 40vw;
+}
+/*footer*/
+footer {
+    text-align: center;
+    padding: 5%;
+}
+
+footer a {
+    color: black;
+}
+footer iframe{
+    width : 70%; 
+}
+
+
+/*vue mobile*/
+@media (max-width:767px) {
+    header{height: auto;}
+    .logo {
+        display: none
+    }
+
+    .menu {
+        position: fixed
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #hamburger-logo {
+        cursor: pointer;
+        width: 200px;
+        display: block;
+        color: black;
+        /* Pour que le menu hamburger s'affiche toujours */
+        text-align: right;
+        /* Pour que le menu hamburger soit "rangé" par défaut */
+        transform: translateX(-168px);
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        overflow: hidden;
+        width: 200px;
+        /* Pour que les liens soient "rangés" par défaut */
+        transform: translateX(-200px);
+    }
+
+    #hamburger-logo,
+    nav {
+        /* Pour qu'il y ait une animation */
+        transition: 0.7s;
+    }
+
+    #hamburger:checked~#hamburger-logo,
+    #hamburger:checked~nav {
+        /* Changement de la position pour afficher les menus */
+        transform: translate(0);
+    }
+
+    .navbar a:nth-child(2),
+    .navbar a:nth-child(3) {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .menu label {
+        display: none;
+    }
+}

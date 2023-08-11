@@ -1,0 +1,97 @@
+
+.description-site {
+    display: flex;
+    align-items: center;
+}
+
+.notre-histoire {
+    width: 30%;
+    margin-left: 10%;
+    flex-basis: auto;
+    align-content: center;
+}
+
+.image-description-site {
+    object-fit: contain;
+    text-align: center;
+}
+.image-description-site img{
+    width : 70%;
+}
+
+.ancre-accueil-services,
+.ancre-accueil-a-propos {
+    width: 40%;
+}
+
+#accueil-services {
+    display: flex;
+}
+
+.accueil-services-liste {
+    width: 40%;
+    margin: 20px;
+    list-style-type: circle;
+}
+
+
+.accueil-services-image {
+    max-width: 60%;
+    margin: 20px;
+    box-shadow: 5vw 5vw 10vw var(--couleur-fond2);
+}
+
+#accueil-a-propos {
+    display: flex;
+}
+
+.accueil-a-propos-description {
+    display: relative;
+    width: 40%;
+    margin: 40px;
+    align-items: center;
+}
+
+video {
+    flex-basis: ato;
+    width: 50%;
+    margin: 20px;
+}
+
+hr {
+    rotate: 180deg;
+    z-index: -1;
+    height: 350px;
+    margin-top: 30px;
+}
+/*vue mobile*/
+@media (max-width:767px) {
+header{height: auto;}
+.description-site{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.description-site button{margin-bottom : 2%;}
+.notre-histoire, .accueil-services-liste, #accueil-services img, .accueil-a-propos-description{
+    width: 80%
+}
+#accueil-services{
+    flex-direction: column;
+    text-align: center;
+}
+hr{display:none}
+.accueil-services-liste, #accueil-services img{
+    margin: 2% auto;
+    text-align: justify;
+}
+#accueil-a-propos{
+    flex-direction: column;
+    width : 0 auto;
+    align-items: center;
+}
+video{
+    width: 90%
+}
+
+}

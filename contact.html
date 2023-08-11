@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="menu">
+        <input type="checkbox" id="hamburger">
+        <label id="hamburger-logo" for="hamburger">☰</label>
+        <nav class="navbar">
+            <a href="/accueil.html"><img class="logo" src="/logo.jpg" alt="logo"></a>
+            <a href="/contact.html">Contact</a>
+            <a href="/services.html">Services</a>
+        </nav>
+    </div>
+    <header>
+        <h1>Nous contacter</h1>
+        <p>Nous sommes disponibles pour toute demande via nos différents canaux : réseaux sociaux, téléphone, email. Egalement, vous pouvez tout simplement compléter notre formulaire et nous reviendrons vers vous le plus rapidement possible.</p>
+        <button><a href="#formulaire">Formulaire de contact</a></button>
+
+    </header>
+    <main>
+        <h2>FORMULAIRE DE CONTACT</h2>
+        <form id="formulaire" action="" method="post">
+            <fieldset>
+                <label for="prénom">Entrez votre prénom : 
+                    <input id="prenom" name="prénom"type="text"required>
+                </label>
+                <label for="nom">Entrez votre nom : 
+                    <input id="nom" name="nom" type="text"required>
+                </label>
+                <label for="email">Entrez votre email : 
+                    <input id="email" name="email"type="email"required>
+                </label>
+                <label for="tel">Entrez votre numéro de téléphone : 
+                    <input id="tel" name="tel"type="number" pattern="[0-9]{10,13}" required>
+                </label>
+                <label for="message">Ecrivez votre message: 
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Je souhaite m'offrir un soin..."></textarea>
+                </label>
+                </fieldset>
+            </form>
+            <button type="submit" value="Valider" name="valider">Valider</button>
+    </main>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2668.4527626989257!2d-2.1760968234562683!3d48.024281509041614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s33%20rue%20du%20chevalier%20lancelot%20du%20lac%20paimpont!5e0!3m2!1sfr!2sfr!4v1691740933391!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>35 rue du Chevalier Lancelot du Lac</p>
+        <p>35380 PAIMPONT</p>
+        <p>contact@lotusbeaute.fr</p>
+        <p>06 11 22 33 44</p>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FPlus2POPSchool"><i class="ri-twitter-fill"></i></a>
+        <a href="https://www.instagram.com/popschoolfr/"><i class="ri-instagram-fill"></i></a>
+        <a href="https://www.facebook.com/POPSchoolFr/"><i class="ri-facebook-box-fill"></i></a>
+        <a href="https://www.linkedin.com/in/justine-mariacourt-146592276/"><i class="ri-linkedin-box-fill"></i></a>
+
+    </footer>
+    
+</body>
+</html>
