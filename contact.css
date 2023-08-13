@@ -77,3 +77,14 @@ a{
     margin-top : 70%;
 }
 }
+
+/*vue tablette*/
+@media (min-width:768px) and (max-width:1199px) {
+  header{height : 50vw;
+    background-size : 145%;}
+    header p{font-weight: bold ;
+      width : 90%;
+      margin: 0 auto;
+      
+  }  
+}

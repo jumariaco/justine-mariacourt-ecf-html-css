@@ -29,7 +29,10 @@ a {
     text-decoration: none;
     color: black;
 }
-
+*{font-family : 'nunito', 'sans serif'}
+h1, h2, .navbar a {
+    font-family: 'Dancing Script', cursive;
+}
 h2{
     text-align: center;
 }
@@ -47,6 +50,7 @@ footer {
     left: 0;
     right: 0;
     height: 80px;
+    z-index: 4;
 }
 
 .logo {
@@ -58,7 +62,7 @@ footer {
 }
 
 .navbar a:nth-child(2),
-.navbar a:nth-child(3) {
+.navbar a:nth-child(3){
     font-size: 40px;
     font-weight: 100px;
     text-decoration: none;
@@ -122,6 +126,7 @@ footer iframe{
         /* Pour que les liens soient "rangés" par défaut */
         transform: translateX(-200px);
     }
+    .navbar{height: 110px;}
 
     #hamburger-logo,
     nav {
@@ -136,17 +141,26 @@ footer iframe{
     }
 
     .navbar a:nth-child(2),
-    .navbar a:nth-child(3) {
-        font-size: 20px;
+    .navbar a:nth-child(3),
+    .navbar a:nth-child(4) {
+        font-size: 22px;
         text-decoration: none;
-        color: black;
+        margin-top: 5%;
+        margin-left: 30%;
+        color:black;
     }
-
-
 }
 
+/*vue grand écran*/
 @media (min-width:768px) {
     .menu label {
         display: none;
     }
+    .lien-accueil{
+        display:none;
+    }
+}
+/*vue tablette*/
+@media (min-width:768px) and (max-width:1199px) {
+    header{height: auto;}
 }
